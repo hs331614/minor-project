@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Meditation Site</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="#guided-meditations">Guided Meditations</a></li>
+            <li><a href="#meditation-timer">Meditation Timer</a></li>
+            <li><a href="#daily-quote">Daily Quote</a></li>
+        </ul>
+    </nav>
+
+    <header>
+        <div class="hero-content">
+            <h1>Welcome to Your Meditation Site</h1>
+            <p>Start your journey to mindfulness and relaxation.
+                 Choose a guided meditation or set a timer.</p>
+            <button id="start-meditation">Start Meditation</button>
+        </div>
+    </header>
+    
+
+    <section id="guided-meditations">
+        <h2>Guided Meditations</h2>
+    
+        <div class="meditation">
+            <h3>Relaxation Meditation</h3>
+            <p>This 10-minute meditation will help you relax and let go of stress.</p>
+            <div class="breathing-instructions">
+                <span class="breathing-instructions-text">Breathe In</span>
+                <i class="breathing-instructions-icon fas fa-arrow-down"></i>
+            </div>
+            <audio controls>
+                <source src="relaxation-meditation.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+        </div>
+    
+        <!-- Add more meditations in the same format -->
+    </section>
+    
+
+    <section id="meditation-timer" style="background-image: url('background-image.jpg'); background-size: cover; background-position: center;">
+        <h2>Meditation Timer</h2>
+    
+        <div class="timer">
+            <input type="number" id="timer-input" min="1" placeholder="Enter time in minutes">
+            <button id="timer-start">Start Timer</button>
+            <div class="breathing-circle">
+                <div class="breathing-label" id="breathing-label"></div>
+                <div id="breathing-pattern"></div>
+            </div>
+            <p id="timer-display">00:00</p>
+            <audio id="ambient-sound" loop>
+                <source src="ambient-sound.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+        </div>
+    </section>
+    
+
+    <section id="daily-quote">
+        <h2>Daily Quote</h2>
+        <blockquote>
+            <p id="quote-display">"The mind is everything. What you think you become." – Buddha</p>
+        </blockquote>
+        <button id="quote-button">Generate New Quote</button>
+    </section>
+    
+
+    <footer>
+        <p>Contact: your-email@example.com</p>
+        <p>&copy; 2023 Your Name. All rights reserved.</p>
+    </footer>
+    
+
+    <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Guided Journal</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Guided Journal</h1>
+  
+  <div class="journal-form">
+    <form id="journalForm">
+      <label for="datePicker">Select Date:</label>
+      <input type="date" id="datePicker" required>
+      <textarea id="journalTextArea" placeholder="Write about your day..." required></textarea>
+      <button type="submit">Submit</button>
+    </form>
+    
+    <button id="loadEntriesButton">Load Entries</button>
+    
+    <ul id="entriesList"></ul>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

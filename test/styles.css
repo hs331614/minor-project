@@ -1,0 +1,217 @@
+/* Reset some default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #f1f1f1;
+  color: #333;
+}
+
+header {
+  background-color: #41A7F1;
+  padding: 20px;
+  text-align: center;
+}
+
+h1 {
+  color: #fff;
+}
+
+main {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+h2 {
+  margin-bottom: 10px;
+}
+
+form {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+input[type="date"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  resize: none;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #41A7F1;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #2387D9;
+}
+
+button:active {
+  background-color: #1769A4;
+}
+
+#entriesList {
+  margin-top: 10px;
+}
+
+#noEntriesMessage {
+  text-align: center;
+  color: #888;
+}
+
+.journal-entry {
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 4px;
+  background-color: #f9f9f9;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.journal-entry:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.journal-entry-date {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.journal-entry-text {
+  white-space: pre-wrap;
+}
+
+
+/* Reset some default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #f1f1f1;
+  color: #333;
+}
+
+header {
+  background-color: #41A7F1;
+  padding: 20px;
+  text-align: center;
+}
+
+h1 {
+  color: #fff;
+}
+
+main {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+h2 {
+  margin-bottom: 10px;
+}
+
+form {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+input[type="date"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  resize: none;
+}
+
+button {
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button.edit-button {
+  background-color: #2ecc71;
+  color: #fff;
+  border: none;
+}
+
+button.delete-button {
+  background-color: #e74c3c;
+  color: #fff;
+  border: none;
+}
+
+button:hover {
+  background-color: #2387D9;
+}
+
+button:active {
+  background-color: #1769A4;
+}
+
+#entriesList {
+  margin-top: 10px;
+}
+
+#noEntriesMessage {
+  text-align: center;
+  color: #888;
+}
+
+.journal-entry {
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 4px;
+  background-color: #f9f9f9;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.journal-entry:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.journal-entry-date {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.journal-entry-text {
+  white-space: pre-wrap;
+}

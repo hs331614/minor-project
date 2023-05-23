@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Guided Journal</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <header>
+    <h1>Guided Journal</h1>
+  </header>
+
+  <main>
+    <section class="journal-form">
+      <h2>Write a Journal Entry</h2>
+      <form id="journalForm">
+        <label for="datePicker">Select a Date:</label>
+        <input type="date" id="datePicker" required>
+
+        <label for="journalTextArea">Enter your journal entry:</label>
+        <textarea id="journalTextArea" rows="5" required></textarea>
+
+        <button type="submit">Submit</button>
+      </form>
+    </section>
+
+    <section class="journal-entries">
+      <h2>Journal Entries</h2>
+      <div id="entriesList">
+        <p id="noEntriesMessage">No entries available for the selected date.</p>
+      </div>
+      <button id="loadEntriesButton">Load Entries</button>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+
+</html>

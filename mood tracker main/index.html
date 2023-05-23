@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Mood Tracker</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="header">
+    <h1 class="title">Mood Tracker</h1>
+  </header>
+  
+  <main class="container">
+    <div class="mood-selector">
+      <button class="mood-button" data-mood="1">😞</button>
+      <button class="mood-button" data-mood="2">😐</button>
+      <button class="mood-button" data-mood="3">😊</button>
+      <button class="mood-button" data-mood="4">😄</button>
+    </div>
+  
+    <div class="form-group">
+      <label for="moodDate">Date:</label>
+      <input type="date" id="moodDate" class="input-date">
+    </div>
+  
+    <div class="button-group">
+      <button id="submitMood" class="submit-button">Submit Mood</button>
+      <button id="clearMood" class="clear-button">Clear Mood</button>
+    </div>
+  
+    <h2 class="mood-history-title">Mood History</h2>
+    <table class="mood-table">
+      <thead>
+        <tr>
+          <th>Date</th>
+          <th>Mood</th>
+        </tr>
+      </thead>
+      <tbody id="moodList"></tbody>
+    </table>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
