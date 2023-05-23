@@ -1,0 +1,230 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    font-family: 'Poppins', sans-serif;
+}
+.nav-bar{
+    display: flex;
+   
+}
+
+
+.logobar{
+    margin-left: 52px;
+    margin-top: 40px;
+    display: flex;
+flex-direction: row;
+align-items: center;
+padding: 5.96882px 13.9272px;
+gap: 11.94px;
+
+width: 194.95px;
+height: 53.94px;
+
+background: #FFFFFF;
+box-shadow: 2.65281px 2.65281px 7.29522px rgba(0, 0, 0, 0.25);
+border-radius: 14.5904px;
+
+/* Inside auto layout */
+
+flex: none;
+order: 0;
+flex-grow: 0;
+
+}
+.logo{
+    
+width: 27.15px;
+height: 27.15px;
+margin-top: 13.39px;
+margin-left:13.93px;
+margin-bottom: 13.39px;
+}
+.prname{
+   
+    margin-top: 5.97px;
+    margin-bottom: 5.97px;
+    font-family: 'Poppins', sans-serif;
+
+
+font-size: 27.965px;
+line-height: 42px;
+/* identical to box height */
+color: #000000;
+}
+.dropdownmenus{
+
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+font-weight: 500;
+font-size: 18px;
+line-height: 27px;
+
+display:flex;
+justify-content: center;
+
+flex-wrap: wrap;
+
+width: 510px;
+height:47px;
+flex-direction: column;
+align-items: flex-start;
+margin-top:3.47px;
+margin-left: 656px;
+margin-right: 169px;
+
+}
+.mental{
+    font-family:'Poppins', sans-serif;
+    color: #41A7F1;
+    font-size: 18;
+    font-weight: 400;
+}
+.physical{
+    font-family:'Poppins', sans-serif;
+    color: #E47F08;
+    font-size: 18;
+    font-weight: 400;
+}
+
+.dropdown{
+    min-width: 15em;
+    position: relative;
+    margin: -1em;
+
+
+}
+.dropdown *{
+    box-sizing:border-box;
+}
+.select{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+   padding:1em;
+   cursor: pointer;
+   transition: width 0.3s;
+   border-radius: 0.5em;
+   margin-left: 50px;
+
+}
+.select:hover{
+    background-color: rgb(250, 247, 247);
+
+}
+.caret{
+    width:0;
+    height:0;
+    border-left: 5px solid transparent;
+    border-right:5px solid transparent;
+    border-top: 6px solid black;
+    transition:0.3s;
+
+}
+.caret-rotate{
+    transform: rotate(180deg);
+}
+.menu{
+    list-style:none;
+    padding:0.2em 0.5em;
+    border: 1px #d7d8d8 ;
+    background-color: #ffffff;
+    box-shadow:0 0.5em 1em #dcdcdc;
+    font-family:'Poppins', sans-serif;
+    border-radius: 0.5em;
+    position:absolute;
+    top:3em;
+    left:50%;
+    width:100%;
+    transform: translateX(-50%);
+    opacity: 0;
+    display: none;
+    transition: 0.2s;
+    z-index: 1;
+
+
+}
+
+.menu li{
+    padding:0.7em 0.5em;
+    margin:0.3em 0;
+    border-radius: 0.5em;
+    cursor: pointer;
+}
+
+.menu li:hover{
+    background: rgb(245, 245, 245);
+}
+
+
+.menu-open{
+    display: block;
+    opacity: 1;
+}
+/* disease and cure*/
+.diseaseandcure{
+    display: flex;
+    background-color: #FFA53A;
+    margin-top: 40px;
+    font-family: 'Poppins', sans-serif;
+    color: #ffffff;
+    height: 57px;
+    margin-top: 60px;
+    align-items: center;
+    box-shadow: 5.84493px 6.67992px 20.0398px rgba(228, 127, 8, 0.49);
+    
+    
+}
+.diseaseandcure h1{
+   
+    margin-left: 558px;
+}
+.container {
+    display: flex;
+    align-items: center;
+  }
+  
+  .image {
+    width: 200px; 
+    height: 200px;
+    margin-left: 131px;
+    margin-top: 136px;
+    box-shadow: 5.84493px 6.67992px 20.0398px rgba(181, 177, 173, 0.49);
+  }
+  
+  .content {
+    margin-left: 116px; 
+    margin-top: 143px;
+    margin-right: 84px;
+    
+
+  }
+  
+  .container h1 {
+    font-size: 25px; 
+    margin-bottom: 10px; 
+    color: #f9b96c;
+  }
+  .end p{
+    text-align: center;
+    
+    margin-top: 100px;
+ 
+    margin-bottom: 50px;
+    color: #ababab;
+    font-size: 13px;
+
+  }
+  
+  
+  
+  
+  
+  
+
+
+
+
+
