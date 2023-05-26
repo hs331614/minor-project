@@ -1,4 +1,4 @@
-/* Reset some default styles */
+Reset some default styles
 * {
   margin: 0;
   padding: 0;
@@ -11,7 +11,7 @@ body {
   color: #333;
 }
 
-header {
+.headerh {
   background-color: #41A7F1;
   padding: 20px;
   text-align: center;
@@ -112,11 +112,11 @@ button:active {
 
 body {
   font-family: 'Poppins', sans-serif;
-  background-color: #f1f1f1;
+  background-color: #ffffff;
   color: #333;
 }
 
-header {
+.headerh {
   background-color: #41A7F1;
   padding: 20px;
   text-align: center;
@@ -214,4 +214,49 @@ button:active {
 
 .journal-entry-text {
   white-space: pre-wrap;
+}
+
+
+
+.logobar{
+   
+  display: flex;
+flex-direction: row;
+align-items: center;
+padding: 5.96882px 13.9272px;
+gap: 11.94px;
+
+width: 194.95px;
+height: 53.94px;
+
+background: #FFFFFF;
+box-shadow: 2.65281px 2.65281px 7.29522px rgba(0, 0, 0, 0.25);
+border-radius: 14.5904px;
+
+/* Inside auto layout */
+
+flex: none;
+order: 0;
+flex-grow: 0;
+
+}
+.logo{
+  
+width: 27.15px;
+height: 27.15px;
+margin-top: 13.39px;
+margin-left:13.93px;
+margin-bottom: 13.39px;
+}
+.prname{
+ 
+  margin-top: 5.97px;
+  margin-bottom: 5.97px;
+  font-family: 'Poppins', sans-serif;
+
+
+font-size: 27.965px;
+line-height: 42px;
+/* identical to box height */
+color: #000000;
 }

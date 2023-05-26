@@ -13,6 +13,7 @@ function addHabit(e) {
     totalCounts: totalCounts,
     timeframe: timeframe,
     completed: false,
+    lastCompleted: new Date().toISOString()
   };
 
   habits.push(habit);
@@ -41,38 +42,76 @@ function listHabits(habit = [], habitsList) {
     .join("");
 }
 
-// Toggle If Complete
 function toggleCompleted(e) {
   if (!e.target.matches("input")) return;
   const el = e.target;
   const index = el.dataset.index;
-  habits[index].reps += 1;
+  const habit = habits[index];
 
-  if (habits[index].reps === habits[index].totalCounts) {
-    habits[index].completed = true;
-  } else if (habits[index].reps > habits[index].totalCounts) {
-    habits[index].reps = 0;
-    habits[index].completed = false;
+  const currentDate = new Date();
+
+  if (habit.timeframe === "daily") {
+    const lastCompleted = new Date(habit.lastCompleted);
+    if (currentDate.getDate() !== lastCompleted.getDate()) {
+      habit.reps = 0;
+      habit.completed = false;
+    }
+  } else if (habit.timeframe === "monthly") {
+    const lastCompleted = new Date(habit.lastCompleted);
+    if (
+      currentDate.getMonth() !== lastCompleted.getMonth() ||
+      currentDate.getFullYear() !== lastCompleted.getFullYear()
+    ) {
+      habit.reps = 0;
+      habit.completed = false;
+    }
+  } else if (habit.timeframe === "weekly") {
+    const lastCompleted = new Date(habit.lastCompleted);
+    const currentWeekStart = new Date(
+      currentDate.getFullYear(),
+      currentDate.getMonth(),
+      currentDate.getDate() - currentDate.getDay()
+    );
+    const lastCompletedWeekStart = new Date(
+      lastCompleted.getFullYear(),
+      lastCompleted.getMonth(),
+      lastCompleted.getDate() - lastCompleted.getDay()
+    );
+    if (
+      currentWeekStart.getTime() !== lastCompletedWeekStart.getTime() ||
+      currentDate.getFullYear() !== lastCompleted.getFullYear()
+    ) {
+      habit.reps = 0;
+      habit.completed = false;
+    }
+  } else if (habit.timeframe === "yearly") {
+    const lastCompleted = new Date(habit.lastCompleted);
+    if (currentDate.getFullYear() !== lastCompleted.getFullYear()) {
+      habit.reps = 0;
+      habit.completed = false;
+    }
   }
+
+  habit.reps += 1;
+  habit.lastCompleted = currentDate.toISOString();
 
   listHabits(habits, habitsList);
   localStorage.setItem("habits", JSON.stringify(habits));
 }
 
-// Delete Habit
 function deleteHabit(e) {
   if (!e.target.matches("button")) return;
   const el = e.target;
-  const index = el.dataset.index;
+  constindex = el.dataset.index;
 
   habits.splice(index, 1);
-
+  
   listHabits(habits, habitsList);
   localStorage.setItem("habits", JSON.stringify(habits));
-}
-
-addHabits.addEventListener("submit", addHabit);
-habitsList.addEventListener("click", toggleCompleted);
-habitsList.addEventListener("click", deleteHabit);
-
-listHabits(habits, habitsList);
+  }
+  
+  addHabits.addEventListener("submit", addHabit);
+  habitsList.addEventListener("click", toggleCompleted);
+  habitsList.addEventListener("click", deleteHabit);
+  
+  listHabits(habits, habitsList);

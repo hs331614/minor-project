@@ -1,29 +1,32 @@
-const dropdowns=document.querySelectorAll('.dropdown');
-dropdowns.forEach(dropdown => {
-    const select= dropdown.querySelector('.select');
-    const caret= dropdown.querySelector('.caret');
-    const menu= dropdown.querySelector('.menu');
-    const options= dropdown.querySelectorAll('.menu li');
-    const selected=dropdown.querySelector('.selected');
+document.addEventListener('DOMContentLoaded', function() {
+  const dropdowns = document.querySelectorAll('.dropdown');
 
-select.addEventListener('click', () => {
+  dropdowns.forEach(dropdown => {
+    const select = dropdown.querySelector('.select');
+    const menu = dropdown.querySelector('.menu');
 
-   select.classList.toggle('select-clicked');
-   caret.classList.toggle('caret-rotate');
-   menu.classList.toggle('menu-open');
+    // Event listener for opening/closing dropdown on click
+    select.addEventListener('click', (event) => {
+      event.stopPropagation();
 
-});
+      // Close all other dropdowns
+      dropdowns.forEach(otherDropdown => {
+        if (otherDropdown !== dropdown) {
+          const otherMenu = otherDropdown.querySelector('.menu');
+          otherMenu.classList.remove('menu-open');
+        }
+      });
 
-options.forEach(option => {
-  option.addEventListener('click', () => {
-    selected.innerText=option.innerText;
-    select.classList.remove('select-clicked');
-    caret.classList.remove('caret-rotate');
-    menu.classList.remove('menu-open');
-
-    
-
+      // Toggle the clicked dropdown
+      menu.classList.toggle('menu-open');
     });
+  });
 
-});
+  // Event listener for closing dropdown when clicking outside
+  document.addEventListener('click', () => {
+    dropdowns.forEach(dropdown => {
+      const menu = dropdown.querySelector('.menu');
+      menu.classList.remove('menu-open');
+    });
+  });
 });

@@ -6,8 +6,58 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="bmi.css">
+    <link rel="stylesheet" href="../style.css">
 </head>
 <body>
+  <header class="navbarmain">
+    <a href="/index.html">
+    <div class="logobar">
+      <div class="logo">
+        <img src="/images/Vector (2).png" alt="uphealth logo">
+      </div>
+      <div class="prname">uphealth</div>
+    </div>
+  </a>
+
+    <nav class="dropdownmenus">
+      <div class="dropdown">
+        <div class="select">
+          <div class="logo2">
+            <img src="/images/logo2.png" alt="mental health logo">
+          </div>
+          <div class="mental">
+            <span class="selected">Mental Health</span>
+          </div>
+          <div class="caret"></div>
+        </div>
+        <ul class="menu menume">
+          <li><a href="/Mood Tracker/tracker.html">Mood Tracker</a></li>
+          <li><a href="/Habit tracker/habit.html">Habit Tracker</a></li>
+          <li><a href="/Guided Journal/jounal.html">Guided Journal</a></li>
+          <li><a href="/Guided Meditation/meditation.html">Meditation</a></li>
+        </ul>
+      </div>
+
+      <div class="dropdown">
+        <div class="select">
+          <div class="logo3">
+            <img src="/images/logo3.png" alt="Physical health logo">
+          </div>
+          <div class="physical">
+            <span class="selected">Physical Health</span>
+          </div>
+          <div class="caret"></div>
+        </div>
+        <ul class="menu menuph">
+          <li><a href="/disease and cure/disease.html">Diseases and Cure</a></li>
+          <li><a href="/period exercise/period.html">Period Exercises</a></li>
+          <li><a href="/bmi/bmi.html">BMI</a></li>
+          <li><a href="/body tracker/body.html">Body Workout</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
     <div class="container">
         <div class="box">
           <h1>BMI Calculator</h1>
@@ -30,5 +80,6 @@
         </div>
       </div>
       <script src="bmi.js"></script>
+      <script src="../script.js"></script>
 </body>
 </html>

@@ -1,0 +1,159 @@
+
+.content{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+a{
+    text-decoration: none;
+}
+
+/* Container styles */
+.content {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    margin: 80px 0px;
+  }
+  
+  /* Mental Health Section */
+  .left,
+  .right {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    justify-content: center;
+  }
+  
+  .mentalli {
+    width: 350px;
+    height: 110px;
+    padding: 30px 20px;
+    text-align: center;
+    justify-content: space-between;
+    background-color: #ffffff;
+    color: #3d3d3d;
+    border-radius: 30px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .mentalli:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .mentalli h1 a {
+    font-size: 1em;
+    font-weight: 600;
+    background-color: #41a7f1;
+    color: #ffffff;
+    padding: 10px 20px;
+    border-radius: 30px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .mentalli h1 a:hover {
+    background-color: #2381ca;
+  }
+  
+  /* Physical Health Section */
+  .physicalli {
+    width: 350px;
+    height: 110px;
+    padding: 30px 20px;
+    text-align: center;
+    background-color: #ffffff;
+    color: #3d3d3d;
+    border-radius: 30px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .physicalli:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .physicalli h1 a {
+    font-size: 1em;
+    font-weight: 600;
+    background-color: #ffa53a;
+    color: #ffffff;
+    padding: 10px 20px;
+    border-radius: 30px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .physicalli h1 a:hover {
+    background-color: #e69021;
+  }
+  
+  /* Animation */
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Apply animation to elements */
+  .mentalli,
+  .physicalli {
+    animation: fadeIn 0.5s ease forwards;
+  }
+  
+  /* Dynamic Styles */
+  @media (max-width: 768px) {
+    .content {
+      flex-direction: column;
+    }
+    
+    .left,
+    .right {
+      align-items: flex-start;
+    }
+  }
+  
+
+
+  footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+  }
+  
+  .container {
+    max-width: 960px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  p {
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+  
+  a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  
