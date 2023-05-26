@@ -17,6 +17,15 @@ body {
   text-align: center;
 }
 
+
+footer{
+  background: #41A7F1;
+color: white;
+text-align: center;
+padding: 1rem;
+line-height: 2rem;
+}
+
 h1 {
   color: #fff;
 }

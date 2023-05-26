@@ -128,6 +128,11 @@ body {
     opacity: 0.7;
   }
   
+
+  #guided-meditations {
+    text-align: center;
+
+  }
   @keyframes breathing {
     0%, 100% {
       transform: scale(1);
@@ -232,3 +237,6 @@ line-height: 2rem;
     }
   }
   
+  .breathing-circle{
+    margin-top: 40px;
+  }

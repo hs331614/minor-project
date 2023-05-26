@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Nunito:wght@600;700;800;900&display=swap");
 :root{
-    --primary-color: #4f7df9;
-    --primary-color-dark: #0044ff;
+    --primary-color: #ffa53a;
+    --primary-color-dark: #ff930f;
     --secondary-color: #eaeaea;
     --text-color: #000;
     --text-color-light: #fff;   
@@ -122,4 +122,12 @@ button#calculate:hover {
   .input input {
     width: 80%;
   }
+}
+
+footer{
+  background: #FFA53A;
+color: white;
+text-align: center;
+padding: 1rem;
+line-height: 2rem;
 }
